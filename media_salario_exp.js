@@ -180,7 +180,7 @@ boton_mediana_top10.addEventListener("click", () => {
 });
 
 boton_borrar_tarjeta.addEventListener("click", () => {
-    if (contenedor.children.length > Number(input_borrar.value)-1 && Number(input_borrar.value)-1 > 0) {
+    if (contenedor.children.length > Number(input_borrar.value)-1 && Number(input_borrar.value)-1 >= 0) {
         console.log("divs:",contenedor.children.length);
         console.log("número de tarjeta:",Number(input_borrar.value)-1);
         colombia.splice(Number(input_borrar.value)-1,1);
