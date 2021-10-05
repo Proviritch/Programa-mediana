@@ -144,6 +144,7 @@ p {
 .media {
     border: 5px solid red;
     text-decoration: underline;
+    box-shadow: 0px 0px 15px white;
 }
 
 .fixed {
