@@ -1,0 +1,160 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --height-tarjeta: 30rem;
+    --fondo: rgb(31, 31, 31);
+}
+html {
+    font-family: arial;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--fondo);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 2rem;
+    margin: 0 0 0.5em 0;
+    display: block;
+}
+
+input {
+    margin: 0 0 0.5em 0;
+    background: var(--fondo);
+    color: white;
+    font-size: 2rem;
+    max-width: 7em;
+
+}
+
+form {
+    /* border: 2px solid rgb(255, 0, 0); */
+    border-radius: 1rem;
+    padding: 2rem;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    background: rgb(255, 255, 255, 0.7);
+}
+
+.signo {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(0, 132, 255);
+    border-radius: 5px;
+    background: rgb(255, 255, 255, 0.1);
+    color: black;
+    cursor: pointer;
+}
+
+button:nth-of-type(2), button:nth-of-type(3) {
+    transform: scale(0);
+    transition: transform  1s;
+}
+
+button:active {
+    border: 1px solid rgb(119, 235, 255);
+}
+
+button:nth-of-type(2) {
+    margin: 0.5em 0;
+}
+
+.display:nth-of-type(2), .display:nth-of-type(3)  {
+    /* background: orangered; */
+    transform: scale(1);
+}
+
+.tarjeta {
+    height: var(--height-tarjeta);
+    width: 20rem;
+    border: 5px solid limegreen;
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    display: inline-block;
+    border-radius: 1rem;
+    color: white;
+}
+
+/* .brillo {
+    opacity: 1;
+} */
+
+.opacidad {
+    opacity: 0.5;
+}
+
+h3 {
+    font-size: 2.5rem;
+    position: absolute;
+}
+
+p {
+    font-size: 5rem;
+    text-align: center;
+    transform: translateY(calc(var(--height-tarjeta)/2 - 50%)) rotate(45deg);
+}
+
+.div1, .div8, .div15, .div22 {
+    border: 5px solid yellow;
+}
+
+.div2, .div9, .div16, .div23 {
+    border: 5px solid blue;
+}
+
+.div3, .div10, .div17, .div24 {
+    border: 5px solid blueviolet;
+}
+
+.div4, .div11, .div18, .div25 {
+    border: 5px solid rgb(0, 217, 255);
+}
+
+.div5, .div12, .div19, .div26 {
+    border: 5px solid limegreen;
+}
+
+.div6, .div13, .div20, .div27 {
+    border: 5px solid orangered;
+}
+
+.div7, .div14, .div21, .div28 {
+    border: 5px solid rgb(255, 75, 165)
+}
+
+.media {
+    border: 5px solid red;
+    text-decoration: underline;
+}
+
+.fixed {
+    font-size: 10rem;
+    position: fixed;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(50vh - 50%));
+    z-index: 10;
+    padding: 1rem 2rem;
+    background: rgba(255, 0, 0, 0.719);
+    color: white;
+}
+
+
+
